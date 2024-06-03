@@ -22,6 +22,10 @@
         <link rel="stylesheet" href="css/slick.css"/>
 
         <link href="css/tooplate-little-fashion.css" rel="stylesheet">  
+        <link rel="stylesheet" href="/path/to/dist/css/jquery.lbt-lightbox.min.css" />
+        <script src="/path/to/cdn/jquery.min.js"></script>
+        <script src="/path/to/dist/js/jquery.lbt-lightbox.min.js"></script>
+
 <!--
 
 Tooplate 2127 Little Fashion
@@ -250,37 +254,10 @@ https://www.tooplate.com/view/2127-little-fashion
                 </div>
             </section>
 
-            <div class="col-12 text-center">
-                <h2 class="mb-5">Hot News<span> About Elite Gallery</span></h2>
-            </div>
-<div class="row justify-content-evenly mb-4">
-
-            
-            <div class="card mb-3 text-center" style="width: 30rem;">
-                <h3 class="text-success">T-shirt Painting <span class="text-dark">Workshop</span></h3>
-                <h5 >23 May 2024</h3>
-                <img src="images/Untitleddesign/tshirt workshop ig post (1).png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="" style="font-size: smaller;">Good day, AIU students! We heard your interest and are back with another exciting opportunity for you to unleash your creativity at our T-Shirt Art Workshop. Dive into the world of artistic expression and design your own unique T-shirt on May 28th from 8 PM to 10 PM at the Elite Gallery's Operation Room. The registration fee is just 15 RM, and the workshop is limited to 10 participants on a first-come, first-served basis. To register, simply scan the QR code on the poster and fill out the Google form. Don't miss out on this creative adventure! Secure your spot today, and let's create something amazing together!</p>
-                </div>
-            </div>
-            <div class="card mb-3 text-center" style="width: 30rem;">
-                <h3 class="text-success">Canting Batik <span class="text-dark">Workshop</span></h3>
-                <h5>31 May 2024</h3>
-                <img src="images/Untitleddesign/ig post batik canting.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">We are excited to announce that we will be offering an exclusive Batik Art Workshop for the students' ages below 12. This unique opportunity will allow your children to learn the traditional art of Batik, a significant part of our cultural heritage.</p>
-                </div>
-            </div>
-            <div class="card mb-3 text-center" style="width: 30rem;">       
-                <h3>Canting Batik <span>Workshop</span></h3>
-                <h5>31 May 2024</h3>
-                <img src="images/Untitleddesign/ig post batik canting.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </div>
+            <!-- <div class="col-12 text-center">
+                <h2 class="">Hot News<span> About Elite Gallery</span></h2>
+               <a href=""><h3 class="mb-5">click here</h3></a> 
+            </div> -->
               
             
             <section class="front-product">
@@ -413,6 +390,52 @@ https://www.tooplate.com/view/2127-little-fashion
                 </div>
             </div>
         </footer>
+
+        <script>
+            $('#gallery').lbt; <a href="https://www.jqueryscript.net/lightbox/">LightBox </a> ;({
+
+            // content selector
+            custom_children: ".item img",
+
+            // enable captions
+            captions: true,
+            captions_selector: ".item p",
+
+            });
+
+            $('#gallery').lbtLightBox({
+
+            // the number of thumbnails in the pagination
+            qtd_pagination: 8,
+
+            // width/height of the thumbnail pagination
+            pagination_width: "60px",
+            pagination_height: "60px",
+
+            });
+
+            $instance = $('#gallery').lbtLightBox({
+            // ...
+            });
+            $instance.update();
+
+            $instance = $('#gallery').lbtLightBox({
+            // ...
+            });
+            $instance.preload();
+
+            $('#gallery').lbtLightBox({
+
+            db: true,
+
+            });
+
+
+
+
+
+
+        </script>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
