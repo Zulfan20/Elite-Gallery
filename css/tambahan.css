@@ -5,3 +5,17 @@
 .dua{
     display: block;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+#screenhp1 {
+    font-size:  20px;
+    font-weight:bold;
+}
+
+
+#screenhp2 {
+    font-size:  10px;
+    font-weight: 500;
+}
+
+}
